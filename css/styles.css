@@ -1,0 +1,226 @@
+:root{
+    --rojo: #9B0823;
+    --verde: #34837F;
+    --rneutro: #FEECEF;
+    --amarillo: #FEF46D;
+    --blanco: #FFFFFF;
+    --negro: #000;
+    --gris: #EBEBEB;
+    /* Fuentes */
+    --fuente: 'Montserrat', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before , *:after { box-sizing: inherit; }
+body {
+    font-family: var(--fuente);
+    font-size:1.6rem;
+    line-height: 2;
+}
+.contenedor {
+    max-width:120rem;
+    width:90%;
+    margin: 0 auto;
+}
+.contenedor--formulario {
+    max-width:50rem;
+    width:90%;
+    margin: 0 auto;
+}
+
+a{ text-decoration: none; }
+h1 ,h2 , h3 ,h4{ font-family: var(--fuenteHeadings); line-height: 1.2;}
+h1{ font-size: 3.8rem; }
+h2{ font-size: 3.2rem; }
+h3{ font-size: 2.5rem; }
+h4{ font-size: 1.8rem; }
+@media (min-width:900px){
+    h1{ font-size: 4.5rem; }
+    h2{ font-size: 3.8rem; }
+    h3{ font-size: 3rem; }
+    h4{ font-size: 2.4rem; }
+}
+img{ width: 100%; }
+.acceso{display: grid;}
+.no-margin{ margin: 0;}
+.no-padding{ padding: 0; }
+.centrar-texto{ text-align: center; }
+.borde-superior-derecha{ border-top-right-radius: 1.5rem; }
+.borde-superior-izquierda{ border-top-left-radius: 1.5rem; }
+.borde-inferior-derecha{ border-bottom-right-radius: 1.5rem; }
+.borde-inferior-izquierda{ border-bottom-left-radius: 1.5rem; }
+.completo{grid-column: 1/3;}
+.underline{text-decoration: underline; color: var(--negro);}
+.fondo{background-color: var(--gris);}
+.barra{ padding: 1rem 0; }
+.header{ background-color: var(--rojo); margin-bottom: 3rem; }
+.logos{display: flex; align-items: center;}
+.logo{
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+}
+.logo__nombre:hover{ color: var(--amarillo); }
+@media (min-width:780px){
+    .logo{
+        display: flex; flex-direction: row;
+        align-items: center; justify-content: left;
+        gap: 0.5rem;
+    }
+    .apartados .logo{ gap: 0.5rem;justify-content: center; }
+}
+.logo__nombre{
+    color: var(--blanco);
+    font-weight: 600;
+    text-align: center;
+}
+
+.titulo{
+    background-color: var(--rojo);
+    font-weight: 500;
+    color: var(--blanco);
+    border: 1px solid var(--negro);
+    padding: 1rem 0;
+}
+.titulo--v{
+    background-color: var(--verde);
+    font-weight: 500;
+    color: var(--blanco);
+    border: 1px solid var(--negro);
+    padding: 1rem 0;
+}
+.boton{
+    background-color: var(--verde);
+    color: var(--blanco);
+    font-weight: 500;
+    padding: 1rem 0;
+    border: 1px solid var(--negro);
+}
+.boton:hover{color: var(--amarillo);}
+.campo{ display: grid; grid-template-columns: 1fr 2fr; }
+.campo__label{
+    text-align: left;
+    padding: 0.5rem;
+    border-left:1px solid var(--negro);
+}
+.campo--textarea{
+    text-align: center;
+    border:1px solid var(--negro);
+    border-bottom: none;
+}
+.campo__field{
+    border: 1px solid var(--negro);
+    padding: 0.5rem;
+    border-top: none; border-bottom: none;
+}
+.campo__textarea{
+    height: 9rem;
+    border-top: none; border-bottom: none;
+    border: 1px solid var(--negro);
+}
+.navegacion{ display: flex; flex-direction: column; }
+@media (min-width:670px){
+    .navegacion{ flex-direction: row; justify-content: space-around;}
+}
+.navegacion__enlace{ color: var(--blanco); text-align: center; }
+.navegacion__enlace:hover{color: var(--amarillo);}
+.index-link{color: var(--negro);}
+.link:hover{ color: var(--rojo); }
+.mensajes--contenido{padding: 1rem;background-color: var(--rneutro);margin-bottom: 3rem; border: 1px solid var(--negro);border-top: none;}
+.boton--secundario{border-left: none;}
+.campo--botones{grid-template-columns: 1fr 1fr;}
+.formulario{ margin-bottom: 3rem; }
+.galeria{margin-bottom: 3rem; }
+.apartados{ display: grid; gap: 2.5rem;margin-bottom: 2.5rem;}
+@media (min-width:720px){
+    .apartados{  grid-template-columns: 1fr 1fr; }
+    .descarga{ grid-column: 1/3; }
+}
+.index-link--logo{
+    display: flex; gap: 0.5rem;
+    align-items: center; justify-content: center;
+}
+span{color: var(--rojo);}
+.mensajeNO{
+    text-align: center;
+    border-right: 1px solid var(--negro);
+    color: var(--rojo);
+    font-weight: 600;
+}
+.mensajeSI{
+    text-align: center;
+    border-right: 1px solid var(--negro);
+    color: var(--verde);
+    font-weight: 600;
+}
+.acerca{
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.acerca__foto img{
+    border-top-right-radius: 1.5rem;border-top-left-radius: 1.5rem;
+}
+.acerca__informacion{
+    display: grid; gap: 0.5rem;
+    text-align: justify;
+    align-items: center;
+}
+.acerca__peliculas{
+    display: grid; gap: 1.5rem;
+}
+.herramientas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media (min-width:670px){
+    .acerca{
+        display: grid;align-items: flex-start;
+        grid-template-columns: 1fr 1.3fr;
+    }
+    .acerca__foto img{
+        border-top-right-radius: 0; border-top-left-radius: 1.5rem;
+        width: 100%;
+    }
+    .acerca__peliculas,.caja{ grid-column: 1/3; }
+    .herramientas{grid-template-columns: 1fr 1fr 1fr 1fr;}
+}
+.overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%; height: 100%;
+    display: grid; place-items: center;
+    background-color: rgb(0 0 0 / 0.5);
+}
+.overlay picture { display: block; max-width: 80rem; }
+.btn-cerrar{
+    width: 6rem; height: 6rem;
+    border-radius: 50%;
+    color: var(--negro);
+    background-color: var(--rojo);
+    display: grid; place-items: center;
+    font-weight: 700;
+}
+.btn-cerrar:hover{color: var(--blanco); }
+.btn-cerrar:hover{ cursor: pointer; }
+.fijar-body { overflow: hidden; }
+.galeria-imagenes , .acerca__galeria{
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+@media (min-width:720px){
+    .galeria-imagenes , .acerca__galeria{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .uno{grid-column: 2/3;}
+    .dos{grid-column: 3/4;}
+}

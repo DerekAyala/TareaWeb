@@ -1,0 +1,8 @@
+Fecha: 05-11-2021   20:50:01
+IP: 127.0.0.1
+Nombre: Derek
+Correo: derek.ayala12345@hotmail.com
+Pais:mexico
+Pelicula: batman
+Reseña:
+Excelente actor , gran guion , buen final
