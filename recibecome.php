@@ -107,7 +107,7 @@
           $abre = fopen($archivo, "a+");
           //recuperamos los datos recibidos
           $date = date("d-m-Y   H:i:s");
-          $total = "Fecha: ".$date."\r\n"."IP: ".$_SERVER['REMOTE_ADDR']."\r\n"."Nombre: ".$_POST['nombre']."\r\n"."Correo: ".$_POST['email']."\r\n"."Pais:".$_POST['pais']."\r\n"."Pelicula: ".$_POST['pelicula']."\r\n"."Reseña:\n".$_POST['mensaje']."\r\n"."\r\n";
+          $total = "\nFecha: ".$date."\r\n"."IP: ".$_SERVER['REMOTE_ADDR']."\r\n"."Nombre: ".$_POST['nombre']."\r\n"."Correo: ".$_POST['email']."\r\n"."Pais:".$_POST['pais']."\r\n"."Pelicula: ".$_POST['pelicula']."\r\n"."Reseña:\n".$_POST['mensaje']."\r\n"."\r\n\n";
           // se graba la info
           $grabar = fwrite($abre, $total);
           // Cerramos la conexi�n al archivo

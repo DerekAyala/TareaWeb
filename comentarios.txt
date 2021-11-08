@@ -6,3 +6,12 @@ Pais:mexico
 Pelicula: batman
 Reseña:
 Excelente actor , gran guion , buen final
+Fecha: 08-11-2021   03:33:46
+IP: 127.0.0.1
+Nombre: Derek
+Correo: derek.ayala12345@hotmail.com
+Pais:mexico
+Pelicula: batman
+Reseña:
+Gran actuación por parte de ben Affleck 
+
